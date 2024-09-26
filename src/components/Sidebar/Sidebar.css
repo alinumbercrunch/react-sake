@@ -1,7 +1,9 @@
+/* Sidebar Styles */
 .sidebar {
   width: 320px;
   height: 100vh;
-  background-color: #E2EAED;
+  background: linear-gradient(135deg, #000000, #434343); /* Dark gradient */
+  color: #FFFFFF; /* White text color */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -17,6 +19,34 @@
   min-width: 20px;
 }
 
+/* Navbar Styles */
+.navbar-2 {
+  background: linear-gradient(135deg, #001a00, #003300); /* Darker green gradient */
+  color: #FFFFFF; /* White text color for contrast */
+  padding: 10px 24px; /* Add padding for consistency */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-2 h2 {
+  margin: 0; /* Remove default margin */
+}
+
+.navbar-2 .dropdown-menu {
+  background-color: #003300; /* Matching dropdown background */
+  color: #FFFFFF; /* Matching dropdown text color */
+}
+
+.navbar-2 .dropdown-item {
+  color: #FFFFFF; /* Matching dropdown item text color */
+}
+
+.navbar-2 .dropdown-item:hover {
+  background-color: #001a00; /* Hover effect for dropdown items */
+}
+
+/* Responsive Styles */
 @media (max-width: 500px) {
   .sidebar {
     display: none;

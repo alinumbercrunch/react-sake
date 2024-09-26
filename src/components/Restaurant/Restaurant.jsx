@@ -7,3 +7,14 @@
 // criteria: ["Power sockets", "Quiet"]
 
 import "./Cafe.css";
+import React from 'react';
+
+function Cafe(props) {
+  return (
+    <div>
+      Cafe
+    </div>
+  );
+}
+
+export default Cafe;

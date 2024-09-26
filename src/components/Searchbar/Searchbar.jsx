@@ -8,7 +8,7 @@ function Searchbar() {
   return (
     <div className="searchbar input-group">
       <span className="input-group-text"><i className="fa-solid fa-magnifying-glass"></i></span>
-      <input placeholder="Starbucks" type="text" className="form-control" />
+      <input placeholder="Kamemi Sake Bar" type="text" className="form-control" />
     </div>
   );
 }

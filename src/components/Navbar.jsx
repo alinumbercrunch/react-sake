@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from '../assets/logo.png'
+import sake from '../assets/sake-2.png';
 import SearchBar from "./Searchbar/Searchbar";
 
 function Navbar() {
   return (
-    <div className="d-flex justify-content-between align-items-center w-100 py-2 px-4 bg-success-subtle">
+    <div className="d-flex justify-content-between align-items-center w-100 py-2 px-4 navbar-2">
       <div className="d-flex align-items-center">
-        <img height="56" className="me-3" src={logo} alt="keyboard and matcha logo" />
-        <h2>Matcha and keyboard</h2>
+        <img height="56" className="me-3" src={sake} alt="keyboard and matcha logo" />
+        <h2>Sake Spots 🍶</h2>
       </div>
       <div className="d-flex align-items-center gap-5">
         <SearchBar />
