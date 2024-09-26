@@ -1,0 +1,24 @@
+.sidebar {
+  width: 320px;
+  height: 100vh;
+  background-color: #E2EAED;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+.sidebar > div {
+  padding: 0 24px;
+  padding-top: 24px;
+}
+
+.sidebar .form-icons {
+  min-width: 20px;
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    display: none;
+  }
+}

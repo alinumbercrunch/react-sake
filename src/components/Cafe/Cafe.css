@@ -1,0 +1,49 @@
+.cafe-card {
+    height: 100%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.cafe-card > img {
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px 4px 0 0;
+}
+
+
+.cafe-card > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  min-height: 160px;
+}
+
+.cafe-card > div > div {
+  min-height: 120px;
+}
+
+.cafe-card p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.cafe-card p > span {
+  padding: 0px 4px;
+  background-color: grey;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.cafe-card > div > a {
+  padding: 8px;
+  background-color: #198753;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+}

@@ -1,0 +1,57 @@
+// Backend API endpoint: https://matcha-and-keyboard-f549965e60e7.herokuapp.com/api/v1/cafes
+
+// Google maps URL: https://www.google.com/maps/search/?api=1&query=DDSK SAIGON KITCHEN
+
+// Example restaurant data
+[
+    {
+        "picture": "https://laptopfriendly.co/images/places/tokyo/ddsk-saigon-kitchen/ddsk-saigon-kitchen--tokyo.jpg",
+        "title": "DDSK SAIGON KITCHEN",
+        "address": "ss, 135-0061, Tokyo",
+        "criteria": []
+    },
+    {
+        "picture": "https://laptopfriendly.co/images/places/tokyo/common/common--tokyo.jpg",
+        "title": "COMMON",
+        "address": "106-0032, Tokyo",
+        "criteria": [
+            "Stable Wi-Fi",
+            "Power sockets",
+            "Quiet",
+            "Coffee",
+            "Food"
+        ]
+    },
+    {
+        "picture": "https://laptopfriendly.co/images/places/tokyo/brooklyn-parlor-shinjuku/brooklyn-parlor-shinjuku%20shinjuku-city%20brooklyn-parlor-shinjuku-shinjuku-city%20.jpg",
+        "title": "BROOKLYN PARLOR SHINJUKU",
+        "address": "Shinjuku Marui Annex B1F, 3-1-26 Shinjuku, Shinjuku-ku, Tokyo, 160-0022, Tokyo",
+        "criteria": [
+            "Stable Wi-Fi",
+            "Power sockets",
+            "Quiet",
+            "Coffee",
+            "Food"
+        ]
+    }
+]
+
+
+<div className="searchbar input-group">
+    <span className="input-group-text"><i className="fa-solid fa-magnifying-glass"></i></span>
+    <input placeholder="Starbucks" type="text" className="form-control" onChange={handleChange} />
+</div>
+
+
+<div className="cafe-card">
+    <img src={cafe.picture} alt={cafe.title} />
+    <div>
+    <div>
+        <h5>{cafe.title}</h5>
+        <p>
+        { cafe.criteria .map( crit => <span key={crit}>{crit}</span>)}
+        </p>
+    </div>
+    <a target="_blank" href={gmapsUrl}>Show the map 📍</a>
+    </div>
+</div>
