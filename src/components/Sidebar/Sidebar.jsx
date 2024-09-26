@@ -1,45 +1,45 @@
 import React from 'react';
 import "./Sidebar.css";
-import logo from '../../assets/logo_w_context2.png';
+import sake from '../../assets/sake-2.png';
 
 function Sidebar() {
   // OPTIONAL: build the addCafe feature
 
-  const criteria = ["Stable Wi-Fi", "Power sockets", "Quiet", "Coffee", "Food"];
+  const criteria = ["Lively atmosphere", "Counter seats available", "Quiet", "Unique sake selection", "All-you-can-drink sake", "Knowledgeable staff", "Budget friendly", "Central location"];
 
   return (
     <div className="sidebar">
       <div>
-        <h3>Share your work spot</h3>
+        <h3>Share your favorite Sake place</h3>
         <form>
           <div className="input-group mb-3">
-            <span className="input-group-text" id="cafe-title"><i className="fa-solid fa-mug-saucer form-icons"></i></span>
-            <input name="cafe[title]" placeholder="FabCafe Shibuya" type="text" className="form-control" aria-describedby="cafe-title" />
+            <span className="input-group-text" id="restaurant-title"><i className="fa-solid fa-whiskey-glass form-icons"></i></span>
+            <input name="restaurant[title]" placeholder="Sake Library Omotesando" type="text" className="form-control" aria-describedby="restaurant-title" />
             </div>
           <div className="input-group mb-3">
-            <span className="input-group-text" id="cafe-address"><i className="fa-solid fa-location-dot form-icons"></i></span>
-            <input name="cafe[address]" placeholder="1-chome-11-1 Shibuya, Shibuya City, 150-0002, Tokyo, 150-0002, Tokyo" aria-describedby="cafe-address" type="address" className="form-control" />
+            <span className="input-group-text" id="restaurant-address"><i className="fa-solid fa-location-dot form-icons"></i></span>
+            <input name="restaurant[address]" placeholder="1-chome-11-1 Shibuya, Shibuya City, 150-0002, Tokyo, 150-0002, Tokyo" aria-describedby="restaurant-address" type="address" className="form-control" />
           </div>
-          <div className="mb-3"> 
+          <div className="mb-3">
             { criteria.map((criterion) => {
-              return ( 
+              return (
                 <React.Fragment key={criterion}>
-                  <input name="cafe[criteria][]" type="checkbox" className="btn-check" id={criterion} autoComplete="off" value={criterion}/>
+                  <input name="restaurant[criteria][]" type="checkbox" className="btn-check" id={criterion} autoComplete="off" value={criterion}/>
                   <label className="btn btn-outline-success btn-sm mx-1 mb-1" htmlFor={criterion}>{criterion}</label>
                 </React.Fragment>
               );
             }) }
           </div>
           <div className="input-group mb-3">
-            <span className="input-group-text" id="cafe-picture"><i className="fa-solid fa-camera-retro form-icons"></i></span>
-            <input name="cafe[picture]" type="text" className="form-control" aria-describedby="cafe-picture" placeholder='http://example.com/image.jpg'/>
+            <span className="input-group-text" id="restaurant-picture"><i className="fa-solid fa-camera-retro form-icons"></i></span>
+            <input name="restaurant[picture]" type="text" className="form-control" aria-describedby="cafe-picture" placeholder='http://example.com/image.jpg'/>
           </div>
           <div className="d-grid">
-            <button type="submit" className="btn btn-success">Ready to brew</button>
+            <button type="submit" className="btn btn-success">Ready to kanpai</button>
           </div>
         </form>
       </div>
-      <img src={logo} alt="keyboard and matcha logo" />
+      <img src={sake} alt="keyboard and matcha logo" />
     </div>
   );
 }
