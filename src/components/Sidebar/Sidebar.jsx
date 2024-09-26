@@ -40,6 +40,7 @@ function Sidebar() {
         </form>
       </div>
       <img src={sake} alt="keyboard and matcha logo" />
+       <a href="https://www.flaticon.com/free-icons/sake" title="Sake icons">Sake icons created by Freepik - Flaticon</a>
     </div>
   );
 }
