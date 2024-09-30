@@ -1,6 +1,6 @@
 # Sake Spots 🍶
 
-Explore Sake Spots
+Explore Sake locations in Japan
 
 ![Sake](https://github.com/user-attachments/assets/4f7773f9-9cf3-4772-8910-8b93a0ee0896)
 
