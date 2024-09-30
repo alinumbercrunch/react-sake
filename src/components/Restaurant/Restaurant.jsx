@@ -11,6 +11,7 @@ import React from 'react';
 
 
 function Restaurant({ restaurant = {} }) {
+   const gmapsUrl = `https://www.google.com/maps/search/?api=1&query=${restaurant.title} ${restaurant.address}`;
   const { picture, title, address, criteria = [] } = restaurant;
   return (
     <div className="restaurant-card">
@@ -23,7 +24,7 @@ function Restaurant({ restaurant = {} }) {
                 <span key={criterion}>{criterion}</span>
               ))}
             </p>
-          <a href="">Show the map 📍</a>
+          <a target="_blank" href={gmapsUrl}>Show the map 📍</a>
         </div>
       </div>
     </div>
