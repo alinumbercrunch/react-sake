@@ -3,7 +3,7 @@ import "./Sidebar.css";
 import sake from '../../assets/sake-2.png';
 
 function Sidebar() {
-  // OPTIONAL: build the addCafe feature
+  // OPTIONAL: build the addRestaurant feature
 
   const criteria = ["Lively atmosphere", "Counter seats available", "Quiet", "Unique sake selection", "All-you-can-drink sake", "Knowledgeable staff", "Budget friendly", "Central location"];
 
@@ -32,7 +32,7 @@ function Sidebar() {
           </div>
           <div className="input-group mb-3">
             <span className="input-group-text" id="restaurant-picture"><i className="fa-solid fa-camera-retro form-icons"></i></span>
-            <input name="restaurant[picture]" type="text" className="form-control" aria-describedby="cafe-picture" placeholder='http://example.com/image.jpg'/>
+            <input name="restaurant[picture]" type="text" className="form-control" aria-describedby="restaurant-picture" placeholder='http://example.com/image.jpg'/>
           </div>
           <div className="d-grid">
             <button type="submit" className="btn btn-success">Ready to kanpai</button>

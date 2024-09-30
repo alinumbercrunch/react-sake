@@ -1,12 +1,13 @@
-import "./CafeList.css";
+import "./RestaurantList.css";
 import React from 'react';
+import Restaurant from "../Restaurant/Restaurant";
 
-function CafeList() {
+function RestaurantList({restaurants}) {
   return (
-    <div>
-      CafeList
+    <div className="restaurant-list">
+      { restaurants.map( restaurant => <Restaurant restaurant={restaurant} key={restaurant.title}/>)}
     </div>
   );
 }
 
-export default CafeList;
+export default RestaurantList;

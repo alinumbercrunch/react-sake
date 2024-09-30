@@ -1,20 +1,21 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
+import RestaurantList from './components/RestaurantList/RestaurantList';
 
-
-// rsf + tab to create a functional component if you are using react snipset
 function App() {
+  const [restaurants, setRestaurants] = useState([]);
+
   return (
-    <div>
-      <Navbar/>
+    <div className='app-frame'>
+      <Navbar setRestaurants={setRestaurants} />
       <div className="app-body">
-      <Sidebar/>
+        <Sidebar />
+        <RestaurantList restaurants={restaurants} />
       </div>
     </div>
   );
 }
-
 
 export default App;
