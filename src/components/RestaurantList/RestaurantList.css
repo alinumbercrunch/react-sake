@@ -1,4 +1,4 @@
-.cafe-list {
+.restaurant-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
@@ -7,13 +7,13 @@
 }
 
 @media (min-width: 700px) {
-  .cafe-list {
+  .restaurant-list {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width: 1000px) {
-  .cafe-list {
+  .restaurant-list {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
