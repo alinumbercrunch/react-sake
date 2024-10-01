@@ -8,7 +8,7 @@ function Searchbar({ setRestaurants }) {
 
   useEffect(() => {
     // Fetch data from the provided URL
-    const url = "https://gist.githubusercontent.com/alinumbercrunch/57d2c1821ebb8416629fe0db0fc4282d/raw/5eb766e53d20a8d56ff3e35e0fc85d2d33ff8216/sake.json";
+    const url = "https://gist.githubusercontent.com/alinumbercrunch/57d2c1821ebb8416629fe0db0fc4282d/raw/2c4a5cfc202537988ca996168d358ae90135f185/sake.json";
     fetch(url)
       .then(response => response.json())
       .then(data => {
